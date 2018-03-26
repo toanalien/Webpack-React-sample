@@ -4,10 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start": "./node_modules/webpack/bin/webpack.js -p --progress && node server.js",
     "dev": "webpack-dev-server --mode development --open",
     "build": "webpack -p --mode production"
   },
   "dependencies": {
+    "express": "^4.16.3",
+    "path": "^0.12.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
